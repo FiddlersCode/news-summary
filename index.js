@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
   }
 
-  request.open('Get', "http://www.news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/politics/blog/2014/feb/17/alex-salmond-speech-first-minister-scottish-independence-eu-currency-live?show-fields=body");
+  request.open('Get', "http://www.news-summary-api.herokuapp.com/guardian?apiRequestUrl=http://content.guardianapis.com/search?from-date=2017-05-25&section=environment");
+  // request.open('Get', "http://content.guardianapis.com/search?from-date=2017-05-25&section=environment&api-key=c4ac6b5-61f8-4064-9df4-55c72e6eea98")
 
   button.addEventListener('click', function() {
     this.style.display = 'none';
